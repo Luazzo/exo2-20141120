@@ -28,7 +28,8 @@ function loadClass($className, $dir=null){
 }
 
 spl_autoload_register('loadClass');
-
-define('DSN', 'mysql:host=localhost;dbname=poo_exercices');
-define('DB_USER', 'root');
-define('DB_PWD', 'password');
+// on évitera de mettre les données de connexion en dur dans les fichiers de configuration
+// remplacer les *** par vos valeurs
+define('DSN', 'mysql:host=localhost;dbname=*******');
+define('DB_USER', '*********');
+define('DB_PWD', '**********');

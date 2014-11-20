@@ -16,3 +16,12 @@
     + Appréhender le concept d'exception, comprendre le mecanisme des instructions `try...catch`.
     + Envisager le concept de [Separation of concerns](http://en.wikipedia.org/wiki/Separation_of_concerns) en scindant son code en fichiers et unité signifiantes
     + En super bonus, un petit passage rapide par la notation UML pour exposer un schema de classe 
+    
+    
+
+**DISCLAIMER**
+>Ce code est livré dans un but exclusivement pédagogique.
+
+>Il ne sert qu'à exemplifier certains points de matière et n'est aucunement voué à être utilisé en production.
+
+>Il est cependant fourni dans une [licence WTFPL](http://www.wtfpl.net/)
