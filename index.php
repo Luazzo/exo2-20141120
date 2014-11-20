@@ -6,9 +6,10 @@
  * Time: 22:19
  */
 
-require_once dirname( __FILE__ ) . '/config.php';
+require_once dirname( __FILE__ ) . '/config/config.php';
 
 $connexion = new PDO(DSN,DB_USER,DB_PWD);
+
 
 $vehiculeManager = new VehiculeManager($connexion);
 
