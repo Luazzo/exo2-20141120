@@ -48,21 +48,21 @@ class VehiculeManager {
 	public function create(Vehicule $vehicule){
 		$query = "INSERT INTO vehicules (marque, modele, portes, vitesse) VALUES (:marque, :modele, :portes, :vitesse)";
 		$stmt = $this->pdo->prepare($query);
-		$stmt->bindParam(':marque', $vehicule->getMarque());
-		$stmt->bindParam(':modele', $vehicule->getModele());
-		$stmt->bindParam(':portes', $vehicule->getPortes());
-		$stmt->bindParam(':vitesse', $vehicule->getVitesse());
+		$stmt->bindValue(':marque', $vehicule->getMarque());
+		$stmt->bindValue(':modele', $vehicule->getModele());
+		$stmt->bindValue(':portes', $vehicule->getPortes());
+		$stmt->bindValue(':vitesse', $vehicule->getVitesse());
 		$stmt->execute();
 	}
 
 	public function update(Vehicule $vehicule){
 		$query = "UPDATE vehicules SET marque = :marque, modele = :modele, portes = :portes, vitesse = :vitesse WHERE id= :id";
 		$stmt = $this->pdo->prepare($query);
-		$stmt->bindParam(':marque', $vehicule->getMarque());
-		$stmt->bindParam(':modele', $vehicule->getModele());
-		$stmt->bindParam(':portes', $vehicule->getPortes());
-		$stmt->bindParam(':vitesse', $vehicule->getVitesse());
-		$stmt->bindParam(':id', $vehicule->getId());
+		$stmt->bindValue(':marque', $vehicule->getMarque());
+		$stmt->bindValue(':modele', $vehicule->getModele());
+		$stmt->bindValue(':portes', $vehicule->getPortes());
+		$stmt->bindValue(':vitesse', $vehicule->getVitesse());
+		$stmt->bindValue(':id', $vehicule->getId());
 		$stmt->execute();
 	}
 
